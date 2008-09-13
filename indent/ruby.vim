@@ -89,7 +89,7 @@ let s:continuation_regex2 =
 
 " Regex that defines blocks.
 let s:block_regex =
-      \ '\%(\<do\>\|{\)\s*\%(|\%([*@]\=\h\w*,\=\s*\)\%(,\s*[*@]\=\h\w*\)*|\)\=\s*\%(#.*\)\=$'
+      \ '\%(\<do\>\|{\)\s*\%(|\%([(*@]\=\h\w*)\=,\=\s*\)\%(,\s*[(*@]\=\h\w*)\=\)*|\)\=\s*\%(#.*\)\=$'
 
 " 2. Auxiliary Functions {{{1
 " ======================
