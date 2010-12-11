@@ -27,7 +27,8 @@ set cpo-=C
 "
 "   :make -c %<CR>
 "
-CompilerSet makeprg=ruby\ -w\ $*
+"CompilerSet makeprg=ruby\ -w\ $*
+let &makeprg = vimproc#get_command_name('ruby') . ' -W %'
 
 CompilerSet errorformat=
     \%+E%f:%l:\ parse\ error,
